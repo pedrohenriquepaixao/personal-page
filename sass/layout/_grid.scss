@@ -51,3 +51,69 @@
   }
 
 }
+
+.container-flex{
+  max-width: $grid-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.row-flex{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 0 $gutter-horizontal;
+
+
+  &:not(:last-child){
+    margin-bottom: $gutter-vertical;
+  }
+
+  [class^="col-"]{
+    display: flex;
+    align-items: center;
+    &:not(:last-child)
+    {
+      margin-right: $gutter-horizontal;
+    }
+  }
+
+  .col-1{
+    background-color: #1AA1E3;
+    width: calc((100% - 11 * #{$gutter-horizontal}) / 12);
+  }
+
+  .col-2{
+    //background-color: purple;
+    width: calc((100% - 5 * #{$gutter-horizontal}) / 6 );
+  }
+
+  .col-3{
+    background-color: #008A00;
+    width: calc((100% - 3 * #{$gutter-horizontal}) / 4);
+  }
+
+  .col-4{
+    //background-color: #1BA1E2;
+    width: calc((100% - 2 * #{$gutter-horizontal}) / 3);
+  }
+
+  .col-6{
+    //background-color: #D80073;
+    width: calc((100% - #{$gutter-horizontal}) / 2);
+  }
+
+  .col-8{
+    //background-color: #6A00FF;
+    width: calc( ((100% - 2 * #{$gutter-horizontal}) / 3) * 2 + #{$gutter-horizontal}  );
+  }
+
+  .col-12{
+    //background-color: #A20025;
+    width: 100%;
+  }
+
+}

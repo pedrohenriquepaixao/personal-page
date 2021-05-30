@@ -1,12 +1,16 @@
 .section-destaque{
-  background-color: $color-secondary-black;
+  background-image: linear-gradient(to top ,rgba(black,.8) 5%,rgba($color-primary-black,.5) 95%)
+  , url("../../img/wallpaper-2.jpg");
+  background-size: cover;
+  background-position: center;
   color: $color-primary-white;
   height: 85vh;
-  padding: 8rem 0;
   
-  .container{
+  &__destaque{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 85vh;
   }
 
   &__apresentacao{
@@ -22,10 +26,10 @@
 
   &__img{
     height: 70vh;
-    box-shadow: 0 1.5rem 3rem rgba(#000000, .2);
+    box-shadow: 0 1.5rem 2.5rem rgba(#000000, .2);
     transition: all .3s;
     &:hover{
-      box-shadow: 0 1.5rem 4rem rgba(#000000, .5);
+      box-shadow: 0 1.5rem 3rem rgba(#000000, .5);
       transform: translateY(-4px);
     }
   }
