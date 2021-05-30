@@ -1,0 +1,41 @@
+.section-destaque{
+  background-color: $color-secondary-black;
+  color: $color-primary-white;
+  height: 85vh;
+  padding: 8rem 0;
+  
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  &__apresentacao{
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+
+  &__nome{
+    font-size: 3.7rem;
+    font-weight: 600;
+    display: block;
+  }
+
+  &__img{
+    height: 70vh;
+    box-shadow: 0 1.5rem 3rem rgba(#000000, .2);
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0 1.5rem 4rem rgba(#000000, .5);
+      transform: translateY(-4px);
+    }
+  }
+  &__img-picture{
+    background-image: url("../../img/headset-01-big.jpg");
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+}

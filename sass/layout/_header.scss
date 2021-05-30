@@ -1,0 +1,51 @@
+.header{
+  padding: 2rem 0;
+  &__logo{
+    font-size: 2.1rem;
+    font-weight: 600;
+    color: $color-primary-white;
+    padding: 1rem 0;
+  }
+
+  &__nav{
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__list{
+    display: flex;
+    list-style: none;
+  }
+
+  &__item{
+    padding: 10px;
+  }
+
+  &__link{
+    color: $color-primary-white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    position: relative;
+    
+    &:after{
+      content: "";
+      background-color: $color-primary-purple;
+      width: 100%;
+      height: 3px;
+      position: absolute;
+      bottom: -6px;
+      left:0;
+      transform: scaleX(0);
+      transform-origin: bottom left;
+      transition: all .4s;
+    }
+
+    &:hover::after{
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+
+    //border-bottom: 3px solid #5429CF;
+  }
+}

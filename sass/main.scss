@@ -10,9 +10,12 @@
 @import "base/utilites";
 
 //Components
-
+@import "components/btn";
 
 //Layout
 @import "layout/grid";
+@import "layout/header";
 
 //Pages
+
+@import "pages/home";

@@ -1,0 +1,32 @@
+.btn{
+  transition: all .3s;
+
+  &:link,
+  &:visited{
+    padding: 1.2rem 6rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+    position: relative;
+  }
+
+  img{
+    position: absolute;
+    width: 20px;
+    left: 3rem;
+  }
+
+  &:hover{
+    box-shadow: 0 1.4rem 2rem rgba($color: #000000, $alpha: .2);
+  }
+  &--purple{
+    background-image: linear-gradient($color-primary-purple ,$color-secondary-purple);
+    color: $color-primary-white;
+
+    &:active{
+      background-image: linear-gradient($color-secondary-purple,$color-primary-purple );
+    }
+  }
+
+}
