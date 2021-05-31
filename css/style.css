@@ -8,6 +8,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -15,8 +16,19 @@ body {
   background-color: #181818;
 }
 
+::selection {
+  background-color: #8257E5;
+  color: #FFFFFF;
+}
+
 body {
   font-family: "Fira Code", monospace, Montserrat, sans-serif;
+}
+
+.heading-section {
+  color: #E1E1E6;
+  font-size: 3.2rem;
+  font-weight: 500;
 }
 
 .u-margin-bottom-big {
@@ -27,23 +39,37 @@ body {
   margin-bottom: 4rem !important;
 }
 
+.u-margin-top-big {
+  margin-top: 8rem !important;
+}
+
+.u-margin-top-medium {
+  margin-top: 4rem !important;
+}
+
+.u-text-center {
+  text-align: center;
+}
+
 .btn:link, .btn:visited {
   display: flex;
   justify-content: center;
-  align-items: center;
   max-width: 250px;
   padding: 1.5rem 3rem;
-  border-radius: 0.5em;
   color: #E1E1E6;
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
 }
 .btn:hover {
   transform: translateY(-3px) scale(1.02);
   box-shadow: 0.4rem 2rem 2.4rem rgba(0, 0, 0, 0.2);
+}
+.btn:hover::after {
+  width: 100%;
 }
 .btn:active {
   transform: translateY(-2px) scale(1.02);
@@ -51,15 +77,86 @@ body {
 }
 .btn__icon {
   width: 2rem;
+  z-index: 10;
 }
 .btn__text {
   padding: 0 1rem;
+  z-index: 10;
 }
-.btn--linkedin {
-  background-image: linear-gradient(to right, #9b59b6 20%, #8e44ad 80%);
-  background-size: cover;
-  transition: all 0.3s;
+.btn--purple {
+  background-image: linear-gradient(to right, transparent 20%, transparent 80%);
+  background-position-x: left;
+  background-position: left;
+  position: relative;
+  border: 3px solid #563ead;
 }
+.btn--purple:hover {
+  border-color: #E1E1E6;
+}
+.btn--black {
+  background-image: linear-gradient(to right, transparent 20%, transparent 80%);
+  background-position-x: left;
+  background-position: left;
+  position: relative;
+  border: 3px solid #181818;
+}
+.btn--black .btn__text {
+  color: #181818;
+}
+.btn--black:hover {
+  border-color: #181818;
+}
+
+.projeto {
+  display: flex;
+  background-color: #E1E1E6;
+  border: 0.5rem solid #E1E1E6;
+  box-shadow: 0 1.4rem 1.8rem rgba(255, 255, 255, 0.1);
+}
+.projeto__conteudo {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+}
+.projeto__titulo {
+  color: #181818;
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  position: relative;
+  align-self: flex-start;
+  padding-bottom: 2rem;
+}
+.projeto__texto {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #181818;
+  justify-self: flex-start;
+  overflow: hidden;
+}
+.projeto__footer {
+  margin-top: 3rem;
+}
+.projeto__picture {
+  background-color: #121214;
+  width: 50%;
+}
+.projeto__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+.card {
+  background-color: red;
+  width: 100%;
+  height: 20vh;
+}
+
 .row {
   max-width: 144rem;
   margin: 0 auto;
@@ -262,6 +359,61 @@ body {
   height: 100%;
   border-radius: 1rem;
   overflow: hidden;
+}
+
+.section-sobre {
+  width: 100%;
+  color: #E1E1E6;
+}
+.section-sobre__sobre {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.section-sobre__titulo {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.section-sobre__conteudo {
+  padding: 3rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.section-sobre__bloco-img {
+  background-image: linear-gradient(rgba(24, 24, 24, 0.2), #181818), url("../../img/imagem-coder-lateral-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  width: 70%;
+  justify-content: flex-end;
+  height: 60rem;
+  background-color: black;
+  margin-left: auto;
+  border-radius: 1rem;
+}
+.section-sobre__img {
+  height: 100%;
+}
+
+.section-projetos {
+  background-color: #121214;
+  padding: 6rem 0;
+}
+
+.section-conhecimento {
+  padding: 6rem 0;
+}
+.section-conhecimento__conhecimento {
+  width: 100%;
+}
+
+.footer {
+  background-image: linear-gradient(to bottom, #181818, rgba(0, 0, 0, 0.3)), url("../../img/wallpaper-3.jpg");
+  background-size: cover;
+  background-position: right top;
+  width: 100%;
+  height: 40vh;
 }
 
 /*# sourceMappingURL=style.css.map */

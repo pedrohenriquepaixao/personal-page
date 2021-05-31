@@ -34,8 +34,8 @@
 ### Seções
 
 - [x] Destaque
-- [ ] Sobre mim
-- [ ] Projetos
+- [x] Sobre mim
+- [x] Projetos
 - [ ] Conhecimentos
 - [ ] Contato
 - [ ] Footer

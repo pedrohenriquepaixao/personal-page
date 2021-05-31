@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4327dea7f0.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/style.css">
   <title>Portfolio - Pedro H.</title>
 </head>
@@ -23,10 +24,9 @@
         <div class="col-6">
           <nav class="header__nav">
             <ul class="header__list">
-              <li class="header__item"><a href="#" class="header__link header__link--active">Sobre mim</a></li>
-              <li class="header__item"><a href="#" class="header__link">Projetos</a></li>
-              <li class="header__item"><a href="#" class="header__link">Serviços</a></li>
-              <li class="header__item"><a href="#" class="header__link">Conhecimentos</a></li>
+              <li class="header__item"><a href="#sobre" class="header__link header__link--active">Sobre mim</a></li>
+              <li class="header__item"><a href="#projetos" class="header__link">Projetos</a></li>
+              <li class="header__item"><a href="#conhecimentos" class="header__link">Conhecimentos</a></li>
             </ul>
           </nav>
         </div>
@@ -46,7 +46,7 @@
                 <span class="section-destaque__nome">Pedro H.</span>
                 <span class="section-destaque__apresentacao">Desenvolvedor Fullstack Junior.</span>
               </h2>
-              <a href="#" class="btn btn--linkedin">
+              <a href="https://www.linkedin.com/in/pedro-henrique-fullstack" target="_blank" class="btn btn--purple">
                 <img src="./img/logotipo-do-linkedin-square.svg" alt="" class="btn__icon">
                 <div class="btn__text">Linkedin</div>
               </a>
@@ -57,156 +57,137 @@
         </div>
       </div>
     </section>
-  </main> -->
 
-    <!-- <section class="section-grid-test">
-      <div class="row">
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
+    <section class="section-sobre u-margin-top-big" id="sobre">
+      <div class="container-flex">
+        <div class="row-flex">
+          <div class="col-6">
+            <div class="section-sobre__sobre">
+              <h2 class="section-sobre__titulo" >Sobre mim</h2>
+              <p class="section-sobre__conteudo" >
+                Meu nome é Pedro Henrique, tenho 23 anos, moro no Brasil, no municipio de Garanhuns - PE .
+                Atualmente estou cursando Analise e Desenvolvimento de Sistemas na UNINABUCO. 
+                Estudo a algum tempo sozinho sempre focado em adquirir novos conhecimentos. 
+              </p>
+              <p class="section-sobre__conteudo">
+                Iniciei meus estudos sobre desenvolvimento em meiados de 2017 quando iniciei a faculdade de Ciências da computação na UFRPE(Garanhuns - PE),
+                porém me afastei por um tempo da area. No final de 2019 retomei meus estudos para desenvolver um sistema para o batalhão onde trabalho e desde então
+                procuro a cada dia adquirir novos conhecimentos. 
+              </p>
+              <a href="https://www.dropbox.com/s/ujcvknkwr9bkq4o/Curriculo%20Pedro.pdf?dl=0" target="_blank" class="btn btn--purple">Curriculo</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="section-sobre__bloco-img"></div>
+          </div>
+        </div>
       </div>
-    
-      <div class="row">
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-      </div>
-    
-      <div class="row">
-        <div class="col-4">col-4</div>
-        <div class="col-4">col-4</div>
-        <div class="col-4">col-4</div>
-      </div>
-  
-      <div class="row">
-        <div class="col-8">col-8</div>
-        <div class="col-4">col-4</div>
-      </div>
-  
-      <div class="row">
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-4">col-4</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-      </div>
-  
-      <div class="row">
-        <div class="col-6">col-6</div>
-        <div class="col-6">col-6</div>
-      </div>
-  
-      <div class="row">
-        <div class="col-12">col-12</div>
-      </div>
-    </section> -->
+    </section>
 
+    <section class="section-projetos u-margin-top-big" id="projetos">
+      <h2 class="heading-section u-text-center u-margin-bottom-big">Projetos</h2>
+      <div class="container-flex">
+        <div class="row-flex">
+          <div class="col-12">
+            <div class="container-flex">
+              <div class="projeto">
+                <div class="projeto__conteudo">
+                  <h3 class="projeto__titulo">Portfólio Pessoal</h3>
+                  <p class="projeto__texto">
+                    Portfólio pessoal construido com intuido de fixar o que foi aprendido 
+                    ate o momento no curso Advanced CSS and SASS:Flexbox,Grid, 
+                    Animations and More!.
+                  </p>
+                  <footer class="projeto__footer">
+                    <a href="https://github.com/pedrohenriquepaixao/personal-page" target="_blank" class="btn btn--black">
+                      <p class="projeto__texto">Github</p>
+                    </a>
+                  </footer>
+                </div>
+                <div class="projeto__picture">
+                  <img src="./img/print-portfolio.png" alt="Printscreen portfolio" class="projeto__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
+        <div class="row-flex">
+          <div class="col-12">
+            <div class="container-flex">
+              <div class="projeto">
+                <div class="projeto__conteudo">
+                  <h3 class="projeto__titulo">Natours project</h3>
+                  <p class="projeto__texto">
+                    Natours project é uma landpage de um empresa ficticia chamada Natours que oferece pacotes de tours nas naturezas.É um projeto do curso Advanced CSS and SASS , ele foi utilizado para ajudar a entender como o css funciona por baixo dos panos 
+                    e também pra ensinar como funciona a criação de um grid utilizando o float.
+                  </p>
+                  <footer class="projeto__footer">
+                    <a href="https://github.com/pedrohenriquepaixao/Natours-project" target="_blank" class="btn btn--black">
+                      <p class="projeto__texto">Github</p>
+                    </a>
+                  </footer>
+                </div>
+                <div class="projeto__picture">
+                  <img src="./img/Desktop-natours.png" alt="Printscreen portfolio" class="projeto__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row-flex">
+          <div class="col-12">
+            <div class="container-flex">
+              <div class="projeto">
+                <div class="projeto__conteudo">
+                  <h3 class="projeto__titulo">Landpage BikCraft</h3>
+                  <p class="projeto__texto">
+                    A Landpage Bikcraft foi criado durante o curso da Origamid(Web Design Completo), além de conceitos de HTML e CSS
+                    o curso trouxe também todo o embasamento de UX/UI incluindo Cores,Tipografia,Grid e usabilidade.
+                  </p>
+                  <footer class="projeto__footer">
+                    <a href="https://github.com/pedrohenriquepaixao/bikecraft-origamid" target="_blank" class="btn btn--black">
+                      <p class="projeto__texto">Github</p>
+                    </a>
+                  </footer>
+                </div>
+                <div class="projeto__picture">
+                  <img src="./img/Desktop-bikcraft.png" alt="Printscreen portfolio" class="projeto__img">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
       
+    </section>
 
+    <section class="section-conhecimento u-margin-top-big" id="conhecimentos">
+      <div class="container-flex">
+        <div class="section-conhecimento__conhecimento">
+          <h2 class="heading-section u-text-center">Conhecimentos</h2>
+          <div class="row-flex">
+            <div class="col-6">
 
+            </div>
+            <div class="col-6">
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
     <div class="container-flex">
-
       <div class="row-flex">
-        <div class="col-6">1</div>
-        <div class="col-6">2</div>
+        
       </div>
-      
-      <div class="row-flex">
-        <div class="col-4">1</div>
-        <div class="col-8">2</div>
-      </div>
-      <div class="row-flex">
-        <div class="col-1">1</div>
-        <div class="col-1">2</div>
-        <div class="col-1">3</div>
-        <div class="col-1">4</div>
-        <div class="col-1">5</div>
-        <div class="col-1">6</div>
-        <div class="col-1">7</div>
-        <div class="col-1">8</div>
-        <div class="col-1">9</div>
-        <div class="col-1">10</div>
-        <div class="col-1">11</div>
-        <div class="col-1">12</div>
-      </div>
-      <!-- <div class="row-flex">
-        <div class="col-1">1</div>
-        <div class="col-1">2</div>
-        <div class="col-1">3</div>
-        <div class="col-1">4</div>
-        <div class="col-1">5</div>
-        <div class="col-1">6</div>
-        <div class="col-1">7</div>
-        <div class="col-1">8</div>
-        <div class="col-1">9</div>
-        <div class="col-1">10</div>
-        <div class="col-1">11</div>
-        <div class="col-1">12</div>
-      </div> -->
     </div>
-
-    <!-- <section class="section-grid-test-flex">
-      <div class="row-flex">
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-        <div class="col-1">col-1</div>
-      </div>
-    
-      <div class="row-flex">
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-        <div class="col-3">col-3</div>
-      </div>
-    
-      <div class="row-flex">
-        <div class="col-4">col-4</div>
-        <div class="col-4">col-4</div>
-        <div class="col-4">col-4</div>
-      </div>
-  
-      <div class="row-flex">
-        <div class="col-8">col-8</div>
-        <div class="col-4">col-4</div>
-      </div>
-  
-      <div class="row-flex">
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-        <div class="col-4">col-4</div>
-        <div class="col-2">col-2</div>
-        <div class="col-2">col-2</div>
-      </div>
-  
-      <div class="row-flex">
-        <div class="col-6">col-6</div>
-        <div class="col-6">col-6</div>
-      </div>
-  
-      <div class="row-flex">
-        <div class="col-12">col-12</div>
-      </div>
-    </section> -->
-
+  </footer>
 </body>
 </html>

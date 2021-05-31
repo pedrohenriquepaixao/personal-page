@@ -9,9 +9,16 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;//Make all elements inherit border-box of the body
+  scroll-behavior: smooth;
+
 }
 
 body{
   box-sizing: border-box;
   background-color: $color-primary-black;
+}
+
+::selection {
+  background-color: $color-primary-purple;
+  color: #FFFFFF;
 }
